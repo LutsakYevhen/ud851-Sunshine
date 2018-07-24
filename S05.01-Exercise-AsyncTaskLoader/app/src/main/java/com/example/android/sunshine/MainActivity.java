@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity implements ForecastAdapterOn
         LoaderManager.LoaderCallbacks<String[]> callbacks = MainActivity.this;
         Bundle bundle = null;
         getSupportLoaderManager().initLoader(FORECAST_LOADER_ID, bundle, callbacks);
-        
+
         /* Once all of our views are setup, we can load the weather data. */
         loadWeatherData();
     }
